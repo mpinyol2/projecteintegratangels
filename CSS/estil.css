@@ -1,0 +1,105 @@
+/*Primera activitat amb FLEXBOX*/
+/*Veurem com alinear cards en una web
+Veurem canvis d'estat d'un botó
+Veurem mediaqueries (com fer responsive la web)*/
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+  padding: 0;
+}
+
+html {
+	min-height: 100%;
+}
+
+body {
+	min-height: 100%;
+	font-family: 'Playfair Display', serif;
+	font: 1rem;
+	margin:0;
+	background: linear-gradient(380deg, mediumpurple, purple);
+}
+
+a {
+	text-decoration:none;
+}
+
+#titolflexbox{ 
+	color: white;
+	text-align: center;
+	margin-top:20px}
+
+#contenidor {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content:center;
+}
+
+.dissenyadora {
+	height: auto;
+	width: 18vw;
+  margin: 3rem;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius:10px;
+}
+
+img {
+  max-width: 100%;
+  filter: grayscale(100%);
+}
+
+#dissenyadora_imatge {
+/*	background-color: red;*/
+}
+
+.dissenyadora_contingut {
+	display: flex;
+	flex-direction: column;
+}
+
+h1 {	
+	padding:1rem 0rem 1rem 1rem;
+	font-size:2rem;
+	color:purple;
+}
+
+hr {
+	color:purple;
+}
+
+.dissenyadora_bio {
+	font-size:0.85rem;
+	padding:1rem 1rem 1rem 1rem;
+}
+
+.dissenyadora_peu {
+	flex-shrink: 1;
+	font-size:0.75rem;
+	background-color: purple;
+  color: white;
+  border-radius: 0 0 10px 10px;
+  text-align: center;
+  padding: 1rem 1rem;
+  align-self: stretch;
+  align-items: flex-end;
+  align-content: flex-end;
+}
+
+.dissenyadora_peu:hover {
+	filter: grayscale(100%);
+}
+
+/*.MartinaFlor {
+	background-color: red;
+}*/
+
+/*Responsive*/
+@media (max-width: 37.5rem) {
+  body {
+  font-size: 1.2rem;
+  }
+}
